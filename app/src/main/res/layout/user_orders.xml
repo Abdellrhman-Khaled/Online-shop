@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:contentDescription="App Logo"
+        android:src="@drawable/applogo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvProfileMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Your Orders"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvProfileMessage"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/order_recycler_view"
+                android:layout_width="409dp"
+                android:layout_height="654dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="70dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="4"
+        tools:ignore="MissingConstraints">
+
+        <!-- Home Button -->
+        <LinearLayout
+            android:id="@+id/orderedithomeBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#989899"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <!-- Discover Button -->
+        <LinearLayout
+            android:id="@+id/ordereditdiscoverBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/discovery" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discover"
+                android:textColor="#b9c0b2"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <!-- Cart Button -->
+        <LinearLayout
+            android:id="@+id/ordereditcartBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/cart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cart"
+                android:textColor="#989899"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <!-- Profile Button -->
+        <LinearLayout
+            android:id="@+id/ordereditprofileBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="#989899"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

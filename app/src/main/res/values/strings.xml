@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Project</string>
+
+
+
+        <!-- Spinner Entries -->
+        <string-array name="gender_array">
+            <item>Male</item>
+            <item>Female</item>
+        </string-array>
+
+        <!-- Prompt Text -->
+        <string name="gender_prompt">Select Gender</string>
+
+
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/tvorderid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order id: "
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+
+        <TextView
+            android:id="@+id/orderusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username: "
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+
+        <TextView
+            android:id="@+id/tvdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+
+        <TextView
+            android:id="@+id/Price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price: "
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description: "
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tell us about the order.."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+
+        <RatingBar
+            android:id="@+id/ordersrating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/orderscomment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Write a comment..."
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <Button
+            android:id="@+id/ordersubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit feedback"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:padding="12dp" />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

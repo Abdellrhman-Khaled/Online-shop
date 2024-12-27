@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:elevation="6dp"
+        android:clipToPadding="false"
+        android:layout_margin="8dp"
+        android:layout_gravity="center">
+
+        <!-- Order Details Title -->
+        <TextView
+            android:id="@+id/order_details_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Details"
+            android:textSize="24sp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:letterSpacing="0.5" />
+
+        <!-- Card-Like Layout for Order ID Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="start|center_vertical"
+            android:clipToPadding="false">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order ID:"
+                android:textColor="#616161"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123456"
+                android:textColor="#424242"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="12dp" />
+
+        </LinearLayout>
+
+        <!-- Card-Like Layout for Username Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="start|center_vertical"
+            android:clipToPadding="false">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username:"
+                android:textColor="#616161"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nour"
+                android:textColor="#424242"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="12dp" />
+
+        </LinearLayout>
+
+        <!-- Card-Like Layout for Transaction Date Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="start|center_vertical"
+            android:clipToPadding="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transaction Date:"
+                android:textColor="#616161"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2024-12-15"
+                android:textColor="#424242"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="12dp" />
+
+        </LinearLayout>
+
+        <!-- Card-Like Layout for Cart Details Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="start|center_vertical"
+            android:clipToPadding="false">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cart Details:"
+                android:textColor="#616161"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order_cart_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item 1, Item 2, Item 3"
+                android:textColor="#424242"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="12dp" />
+
+        </LinearLayout>
+
+        <!-- Rate Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="start|center_vertical"
+            android:clipToPadding="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate:"
+                android:textColor="#616161"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 Stars"
+                android:textColor="#424242"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="12dp" />
+
+        </LinearLayout>
+
+        <!-- Comment Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="start|center_vertical"
+            android:clipToPadding="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comment:"
+                android:textColor="#616161"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Great service!"
+                android:textColor="#424242"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="12dp" />
+
+        </LinearLayout>
+
+        <!-- Price Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="start|center_vertical"
+            android:clipToPadding="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total:"
+                android:textColor="#616161"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$100.00"
+                android:textColor="#424242"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EGP"
+                android:textColor="#424242"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

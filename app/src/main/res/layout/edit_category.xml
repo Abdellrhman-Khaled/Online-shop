@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/page_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Edit Category"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true" />
+
+        <!-- Form Section -->
+        <LinearLayout
+            android:id="@+id/editProductForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:elevation="2dp">
+
+
+            <!-- Product Category -->
+            <EditText
+                android:id="@+id/edit_cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Category"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <!-- Edit Button -->
+            <Button
+                android:id="@+id/edit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

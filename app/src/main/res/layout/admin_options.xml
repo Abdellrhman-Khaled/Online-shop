@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F9"
+    tools:context=".AdminOptions">
+
+    <!-- Admin Header with enhanced typography and shadow effect -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Options"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="#1A1A1A"
+        android:shadowColor="#D3D3D3"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:fontFamily="sans-serif-condensed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp" />
+
+    <!-- Transactions Button with modern look and spacing -->
+    <Button
+        android:id="@+id/report_button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="Transactions"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/add" />
+
+    <!-- Add Product Button with the same style as the Transactions Button -->
+    <Button
+        android:id="@+id/add"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="Add Product"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/report_button"
+        app:layout_constraintBottom_toTopOf="@+id/chart_button" />
+
+    <!-- Best Selling Products Button with the same style as other buttons -->
+    <Button
+        android:id="@+id/chart_button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="Best Selling Products"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add"
+        app:layout_constraintBottom_toTopOf="@+id/categories"/>
+
+    <Button
+        android:id="@+id/categories"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="Categories"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chart_button" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

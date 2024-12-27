@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/editappLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="App Logo"
+            android:src="@drawable/applogo" />
+
+        <TextView
+            android:id="@+id/editProfileMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editappLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Your Profile"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editProfileMessage"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+                android:elevation="4dp">
+
+                <!-- Username Display -->
+                <TextView
+                    android:id="@+id/edittvUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Username: [USERNAME]"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Full Name Field -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/editetFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:hint="Enter Full Name"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <!-- Email Field -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/editetEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:hint="Enter Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <!-- Phone Number Field -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/editetPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:hint="Enter Phone Number"
+                    android:inputType="phone"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <!-- Gender Field -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp" />
+
+                <Spinner
+                    android:id="@+id/editspGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <!-- Birthdate Field -->
+                <TextView
+                    android:id="@+id/edittvSelectedBirthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Birthdate"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp" />
+
+                <Button
+                    android:id="@+id/editbtnSelectBirthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Birthdate"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Edit Profile Button -->
+                <Button
+                    android:id="@+id/editbtnEditProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#4CAF50"
+                    android:padding="12dp"
+                    android:text="Confirm"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/editbtnchangepassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#4CAF50"
+                    android:padding="12dp"
+                    android:text="Change Password"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:id="@+id/edithomeBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/home" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textColor="#989899"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/editdiscoverBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/discovery" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discover"
+                    android:textColor="#b9c0b2"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/editcartBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/cart" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cart"
+                    android:textColor="#989899"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/editprofileBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/userselected" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textColor="#989899"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

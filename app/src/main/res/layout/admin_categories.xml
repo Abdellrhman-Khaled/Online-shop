@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".discover"
+    tools:ignore="ExtraText">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <!-- All Collections Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#f9f9f9"
+                    app:cardCornerRadius="25dp"
+                    app:strokeColor="#e0e0e0"
+                    app:elevation="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ALL COLLECTIONS"
+                        android:textColor="#4CAF50"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:padding="16dp" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <!-- Add Category Button -->
+            <Button
+                android:id="@+id/add_cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4CAF50"
+                android:text="Add New Category"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Categories List -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/categoryRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

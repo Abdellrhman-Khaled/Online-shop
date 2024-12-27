@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:background="#FFFFFF"
+    android:layout_marginBottom="8dp"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/transaction_order_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="123"
+        android:textSize="13sp"
+        android:textColor="#616161"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/transaction_username"
+        app:layout_constraintWidth_percent="0.13" />
+
+    <TextView
+        android:id="@+id/transaction_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="nour"
+        android:textSize="13sp"
+        android:textColor="#616161"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/transaction_order_id"
+        app:layout_constraintEnd_toStartOf="@id/transaction_date"
+        app:layout_constraintWidth_percent="0.17" />
+
+    <TextView
+        android:id="@+id/transaction_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2024-12-15"
+        android:textSize="13sp"
+        android:textColor="#616161"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/transaction_username"
+        app:layout_constraintEnd_toStartOf="@id/transaction_price"
+        app:layout_constraintWidth_percent="0.20" />
+
+    <TextView
+        android:id="@+id/transaction_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="$100.00"
+        android:textSize="13sp"
+        android:textColor="#616161"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/transaction_date"
+        app:layout_constraintEnd_toStartOf="@id/transaction_view_button"
+        app:layout_constraintWidth_percent="0.20" />
+
+    <Button
+        android:id="@+id/transaction_view_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="View"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:textSize="13sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/transaction_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.23" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

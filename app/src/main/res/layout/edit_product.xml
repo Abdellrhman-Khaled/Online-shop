@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/page_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Edit Product"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true" />
+
+        <!-- Form Section -->
+        <LinearLayout
+            android:id="@+id/editProductForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:elevation="2dp">
+
+            <!-- Product ID -->
+            <EditText
+                android:id="@+id/edit_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Product ID"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <!-- Product Name -->
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Name"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <!-- Product Price -->
+            <EditText
+                android:id="@+id/edit_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Price"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+            <!-- Product Description -->
+            <EditText
+                android:id="@+id/edit_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Description"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <!-- Product Category -->
+            <EditText
+                android:id="@+id/edit_cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Category"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <!-- Product Image -->
+            <EditText
+                android:id="@+id/edit_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Image"
+                android:inputType="textUri"
+                android:minHeight="48dp" />
+
+            <!-- Product Rate -->
+            <EditText
+                android:id="@+id/edit_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Rate"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+            <!-- Product Count -->
+            <EditText
+                android:id="@+id/edit_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Count"
+                android:inputType="number"
+                android:minHeight="48dp" />
+
+            <!-- Rate Count -->
+            <EditText
+                android:id="@+id/edit_rate_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Rate Count"
+                android:inputType="number"
+                android:minHeight="48dp" />
+
+            <!-- Sold -->
+            <EditText
+                android:id="@+id/edit_sold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:hint="Sold"
+                android:inputType="number"
+                android:minHeight="48dp" />
+
+            <!-- Edit Button -->
+            <Button
+                android:id="@+id/edit_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
